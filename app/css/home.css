@@ -19,7 +19,7 @@ body {
   justify-content: space-between;
   background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
   color: #333;
-  padding: 15px 2vw;
+  padding: 15px 3vw;
   position: relative;
   z-index: 10;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
