@@ -108,7 +108,7 @@ body {
   position: relative;
   width: 95vw;
   max-width: 1200px;
-  height: 70vh;
+  height: 80vh;
   margin: 2vh auto;
   overflow: hidden;
   border-radius: 10px;
@@ -215,7 +215,7 @@ body {
 
   .slider {
     width: 95vw;
-    height: 45vh;
+    height: 80vh;
   }
 
   .social-icons {
