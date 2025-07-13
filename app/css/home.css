@@ -1,18 +1,19 @@
 /* ========== GLOBAL STYLES ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   min-height: 100vh;
   background: linear-gradient(to bottom right, #f8f9fc, #e0e7ef);
   color: #333;
   font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 /* ========== NAVBAR STYLES ========== */
-
 .navbar {
   display: flex;
   align-items: center;
@@ -20,12 +21,13 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
   color: #333;
   padding: 15px 3vw;
-  position: relative;
-  z-index: 10;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid #ddd;
-  width: 100vw;
+  width: 100%;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-logo {
@@ -36,18 +38,18 @@ body {
   display: none;
   font-size: 26px;
   cursor: pointer;
-  user-select: none;
   background: none;
   border: none;
+  color: #333;
 }
 
-/* NAV MENU */
+/* ========== MENU ITEMS ========== */
 .navbar-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  flex: 0.9;
+  flex: 1;
 }
 
 .navItem {
@@ -67,7 +69,6 @@ body {
 }
 
 /* ========== DROPDOWN STYLES ========== */
-
 .dropdown {
   position: absolute;
   top: 40px;
@@ -103,10 +104,9 @@ body {
 }
 
 /* ========== SLIDER STYLES ========== */
-
 .slider {
   position: relative;
-  width: 99vw;
+  width: 95vw;
   max-width: 1200px;
   height: 70vh;
   margin: 2vh auto;
@@ -127,11 +127,10 @@ body {
   padding: 12px;
   font-size: 24px;
   cursor: pointer;
-  z-index: 5; /* Change this from 10 to 5 or lower */
+  z-index: 5;
   border-radius: 50%;
   transition: background 0.3s ease;
 }
-
 
 .arrow:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -145,8 +144,35 @@ body {
   right: 15px;
 }
 
-/* ========== RESPONSIVE STYLES ========== */
+/* ========== SOCIAL ICONS ========== */
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #ffffff;
+  padding: 12px 8px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
 
+.social-icons a {
+  color: #333;
+  font-size: 20px;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #0077cc;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
 @media (max-width: 830px) {
   .hamburger {
     display: block;
@@ -155,13 +181,15 @@ body {
   .navbar-menu {
     display: none;
     flex-direction: column;
+    align-items: flex-start;
     width: 100%;
     background: #f9f9f9;
-    padding: 10px 0;
+    padding: 10px 3vw;
     position: absolute;
     top: 60px;
     left: 0;
     border-top: 1px solid #ddd;
+    z-index: 999;
   }
 
   .navbar-menu.open {
@@ -169,7 +197,7 @@ body {
   }
 
   .navItem {
-    padding: 10px 20px;
+    padding: 10px 0;
     width: 100%;
   }
 
@@ -178,14 +206,28 @@ body {
     box-shadow: none;
     border: 1px solid #eee;
     margin-top: 5px;
+    border-radius: 6px;
   }
 
   .dropdown a {
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   .slider {
     width: 95vw;
-    height: 50vh;
+    height: 45vh;
+  }
+
+  .social-icons {
+    top: auto;
+    bottom: 10px;
+    left: 10px;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
   }
 }
