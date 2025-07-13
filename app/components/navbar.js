@@ -7,9 +7,10 @@ import '../css/home.css';
 const menuItems = [
   'Home',
   'Schemes',
-  'Business Development',
-  'Agri-Facilities',
-  'Training',
+  'Market Intelligence & BDS',
+  'FPO & Agri MSME Ecosystem',
+  'Case-let & Publications',
+  'Gallery',
   'Contact Us',
 ];
 
@@ -19,6 +20,7 @@ const dropdowns = [
   ['List of Buyers', 'KABCO-connect', 'Exhibitions', 'BP Providers', 'Model DPRs'],
   ['World Markets', 'Agri-Parks', 'FPOs in Kerala'],
   ['FPO Videos', 'Presentations', 'Booklets'],
+  [],
   [],
 ];
 
