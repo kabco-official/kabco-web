@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+
 import '../css/home.css';
 
 const menuItems = [
@@ -25,11 +27,26 @@ const dropdowns = [
 ];
 
 const Navbar = () => {
+  const router = useRouter();
+
   const [openIndex, setOpenIndex] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleClick = (index) => {
     setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const gotocontact = () => {
+    router.push('/contact-us'); // Replace with the actual path to your Contact Us page
+  };
+
+  const goToPage = (page) => {
+    // Optional: you can add routing for other pages here
+    if (page === 'Home') {
+      router.push('/');
+    } else if (page === 'Gallery') {
+      router.push('/gallery');
+    }
   };
 
   return (
@@ -48,7 +65,20 @@ const Navbar = () => {
       <div className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
         {menuItems.map((item, index) => (
           <div key={item} className="navItem">
-            <span onClick={() => handleClick(index)}>{item}</span>
+            <span
+              onClick={() => {
+                if (item === 'Contact Us') {
+                  gotocontact();
+                } else if (item === 'Home' || item === 'Gallery') {
+                  goToPage(item);
+                } else {
+                  handleClick(index);
+                }
+              }}
+            >
+              {item}
+            </span>
+
             {openIndex === index && dropdowns[index].length > 0 && (
               <div className="dropdown">
                 {dropdowns[index].map((option, optIdx) => (
