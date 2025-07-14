@@ -9,7 +9,7 @@ export default function ContactPage() {
       <div className="contact-container">
         <div className="contact-header">
           <h1>Contact Us</h1>
-          <p>We'd love to hear from you. Fill out the form below to get in touch.</p>
+          <p>We would love to hear from you. Fill out the form below to get in touch.</p>
         </div>
         <form className="contact-form">
           <div className="form-group">
