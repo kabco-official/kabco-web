@@ -24,7 +24,7 @@ body {
   padding: 15px 3vw;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid #ddd;
-  width: 100%;
+  min-width: 100vw;
   top: 0;
   z-index: 1000;
   gap: 2vw;
@@ -104,10 +104,12 @@ body {
 }
 
 /* ========== SLIDER STYLES ========== */
+.container{
+  min-width: 100vw;
+}
 .slider {
   position: relative;
   width: 95vw;
-  max-width: 1200px;
   height: 80vh;
   margin: 2vh auto;
   overflow: hidden;
