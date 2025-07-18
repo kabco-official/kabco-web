@@ -1,11 +1,13 @@
 import React from 'react';
 import '../css/contact.css'; 
 import Navbar from '../components/navbar';
+import Socials from '../components/socials';  
 
 export default function ContactPage() {
   return (
     <>
       <Navbar />
+      <Socials />
       <div className="contact-container">
         <div className="contact-header">
           <h1>Contact Us</h1>
