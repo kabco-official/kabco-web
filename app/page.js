@@ -7,10 +7,12 @@ import './css/home.css';
 import { FaInstagram, FaFacebookF, FaTwitter, FaWhatsapp } from 'react-icons/fa'; // <-- import icons
 
 const sliderImages = [
-  '/home/slider1.jpg',
-  '/home/slider2.jpeg',
-  '/home/slider3.jpg',
-  '/home/slider4.jpg',
+  '/home/newbg-1.jpg',
+  '/home/newbg-2.jpg',
+  '/home/newbg-3.jpg',
+  '/home/newbg-4.jpg',
+  '/home/newbg-5.jpg',
+  '/home/newbg-6.jpg',
 ];
 
 export default function Home() {
