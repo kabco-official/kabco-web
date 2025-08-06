@@ -1,0 +1,112 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overall container */
+.central-gvmt-container {
+
+  background: linear-gradient(to bottom right, #f0fdf4, #e9f5e9);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e472e;
+}
+
+.central-gvmt-submain{
+    padding: 2rem;
+}
+
+/* Header */
+.central-gvmt-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.central-gvmt-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.central-gvmt-subtext {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #4e6e4e;
+}
+
+/* Card styles */
+.central-gvmt-scheme-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(76, 175, 80, 0.15);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+  border-left: 8px solid #81c784;
+}
+
+.central-gvmt-scheme-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Titles & text */
+.central-gvmt-scheme-title {
+  font-size: 1.5rem;
+  color: #1b5e20;
+  margin-bottom: 0.8rem;
+}
+
+.central-gvmt-scheme-desc {
+  font-size: 1rem;
+  color: #3c4c3c;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Links */
+.central-gvmt-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  background-color: #e8f5e9;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.central-gvmt-links a:hover {
+  border-bottom: 2px solid #2e7d32;
+  background-color: #c8e6c9;
+  color: #1a4d1a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .central-gvmt-container {
+    padding: 1rem;
+  }
+
+  .central-gvmt-title {
+    font-size: 2rem;
+  }
+
+  .central-gvmt-scheme-card {
+    padding: 1.2rem;
+  }
+
+  .central-gvmt-scheme-title {
+    font-size: 1.3rem;
+  }
+
+  .central-gvmt-links a {
+    display: block;
+    margin-bottom: 0.8rem;
+    margin-right: 0;
+  }
+}

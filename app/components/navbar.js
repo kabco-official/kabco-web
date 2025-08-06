@@ -18,7 +18,7 @@ const menuItems = [
 
 const dropdowns = [
   [],
-  ['Govt.of India Schemes', 'Kerala State Govt Schemes', 'NAWODHAN', 'AIF', 'Central Schemes', 'Credit Schemes', 'MSME', 'KERA'],
+  ['Central Govt. Schemes', 'State Govt. Schemes'],
   ['List of Buyers', 'KABCO-connect', 'Exhibitions', 'BP Providers', 'Model DPRs'],
   ['World Markets', 'Agri-Parks', 'FPOs in Kerala'],
   ['FPO Videos', 'Presentations', 'Booklets'],
@@ -37,16 +37,20 @@ const Navbar = () => {
   };
 
   const gotocontact = () => {
-    router.push('/contact-us'); // Replace with the actual path to your Contact Us page
+    router.push('/contact-us');
   };
 
   const goToPage = (page) => {
-    // Optional: you can add routing for other pages here
     if (page === 'Home') {
       router.push('/');
     } else if (page === 'Gallery') {
       router.push('/gallery');
     }
+  };
+
+  const routeMap = {
+    'Central Govt. Schemes': '/central-gvmt',
+    'State Govt. Schemes': '/schemes/state',
   };
 
   return (
@@ -82,7 +86,20 @@ const Navbar = () => {
             {openIndex === index && dropdowns[index].length > 0 && (
               <div className="dropdown">
                 {dropdowns[index].map((option, optIdx) => (
-                  <a href="#" key={optIdx}>{option}</a>
+                  <span
+                    key={optIdx}
+                    onClick={() => {
+                      const path = routeMap[option];
+                      if (path) {
+                        router.push(path);
+                        setOpenIndex(null); 
+                      }
+                    }}
+                    className="dropdown-item"
+                    style={{ cursor: 'pointer', display: 'block', padding: '10px 10px' }}
+                  >
+                    {option}
+                  </span>
                 ))}
               </div>
             )}
