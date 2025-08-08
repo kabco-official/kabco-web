@@ -62,7 +62,68 @@ export default function CentralSchemesPage() {
             </a>
             </div>
         </section>
-        </div>
+
+        {/* Scheme 4 */}
+        <section className="central-gvmt-scheme-card">
+            <h2 className="central-gvmt-scheme-title">
+            MoFPI Scheme for Creation of Backward and Forward Linkages
+            </h2>
+            <p className="central-gvmt-scheme-desc">
+            This scheme aims to provide effective and seamless backward and forward integration for processed food industry by linking it with farmers and supply chain infrastructure.
+            </p>
+            <div className="central-gvmt-links">
+            <a href="/pdfs/central-scheme4.pdf" download>
+                📄 Click here for scheme guidelines
+            </a>
+            </div>
+        </section>
+
+        {/* Scheme 5 */}
+        <section className="central-gvmt-scheme-card">
+            <h2 className="central-gvmt-scheme-title">
+            Cluster Development Program (CDP) Scheme
+            </h2>
+            <p className="central-gvmt-scheme-desc">
+            CDP focuses on the development of food processing industries in clusters to facilitate infrastructure development, skill development, and better market access for small and medium enterprises.
+            </p>
+            <div className="central-gvmt-links">
+            <a href="/pdfs/central-scheme5.pdf" download>
+                📄 Click here for scheme guidelines
+            </a>
+            </div>
+        </section>
+
+        {/* Scheme 6 */}
+        <section className="central-gvmt-scheme-card">
+            <h2 className="central-gvmt-scheme-title">
+            Scheme for Operation Greens - Long Term Interventions
+            </h2>
+            <p className="central-gvmt-scheme-desc">
+            This scheme aims to stabilize the supply and prices of TOP crops (Tomato, Onion, Potato) by promoting value chain development, cold storage, processing facilities, and logistics.
+            </p>
+            <div className="central-gvmt-links">
+            <a href="/pdfs/central-scheme6.pdf" download>
+                📄 Click here for scheme guidelines
+            </a>
+            </div>
+        </section>
+
+        {/* Scheme 7 */}
+        <section className="central-gvmt-scheme-card">
+            <h2 className="central-gvmt-scheme-title">
+            MoFPI Scheme for Setting Up / Upgradation of Food Testing Laboratories
+            </h2>
+            <p className="central-gvmt-scheme-desc">
+            This scheme supports the establishment and upgradation of food testing labs to ensure food safety, improve quality standards, and comply with global norms.
+            </p>
+            <div className="central-gvmt-links">
+            <a href="/pdfs/central-scheme7.pdf" download>
+                📄 Click here for scheme guidelines
+            </a>
+            </div>
+        </section>
+
+      </div>
     </div>
   );
 }
