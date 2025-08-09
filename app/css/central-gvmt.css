@@ -42,9 +42,10 @@
   padding: 1.5rem;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(76, 175, 80, 0.15);
-  margin-bottom: 2rem;
   transition: transform 0.3s ease;
-  border-left: 8px solid #81c784;
+  border-left: 8px solid #43a047;
+  max-width: 80vw;
+  margin: 1rem auto;
 }
 
 .central-gvmt-scheme-card:hover {
@@ -71,7 +72,7 @@
   margin-right: 1rem;
   margin-bottom: 0.5rem;
   text-decoration: none;
-  color: #2e7d32;
+  color: #1b5e20;
   font-weight: 500;
   border-bottom: 2px solid transparent;
   background-color: #e8f5e9;

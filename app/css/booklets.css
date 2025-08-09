@@ -1,0 +1,98 @@
+.booklets-container {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Light background for contrast */
+  min-height: 100vh;
+}
+
+.booklets-content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.booklets-content h1 {
+  font-size: 2.5rem;
+  color: #2c5f2d;
+  margin-bottom: 1.5rem;
+}
+
+.booklets-content p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.booklets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible layout */
+  gap: 1.5rem;
+  justify-content: center; /* ✅ Center cards */
+  align-items: start;
+  max-width: 900px; /* ✅ Keep grid from stretching too wide */
+  margin: 2rem auto 0;
+}
+
+.booklet-card {
+  background: #e8f5e9; /* light but clearly visible green */
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out, background 0.3s;
+  text-align: center;
+}
+
+.booklet-card:hover {
+  transform: translateY(-5px);
+  background: #c8e6c9; /* darker green on hover */
+}
+
+
+
+.booklet-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c5f2d;
+  margin-bottom: 0.5rem;
+}
+
+.booklet-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.download-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.download-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .booklets-content h1 {
+    font-size: 2rem;
+  }
+
+  .booklets-content p {
+    font-size: 0.95rem;
+  }
+
+  .booklet-card {
+    padding: 1rem;
+  }
+}

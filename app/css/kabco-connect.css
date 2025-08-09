@@ -1,0 +1,63 @@
+.kabco-connect-container {
+  font-family: Arial, sans-serif;
+}
+
+
+.kabco-banner-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.kabco-connect-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.kabco-connect-content h1 {
+  font-size: 2.5rem;
+  color: #2c5f2d;
+}
+
+.kabco-connect-content h2 {
+  font-size: 1.5rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+.kabco-connect-subtext {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.kabco-connect-intro {
+  margin: 1rem 0;
+}
+
+.kabco-connect-content ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+.kabco-connect-content ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.kabco-connect-schedule {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #d35400;
+}
+
+.kabco-connect-contact {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}

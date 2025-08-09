@@ -50,7 +50,9 @@ const Navbar = () => {
 
   const routeMap = {
     'Central Govt. Schemes': '/central-gvmt',
-    'State Govt. Schemes': '/schemes/state',
+    'State Govt. Schemes': '/state-gvmt',
+    'KABCO-connect': '/kabco-connect',
+    'Booklets': '/booklets'
   };
 
   return (
