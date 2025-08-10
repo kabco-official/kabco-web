@@ -8,7 +8,7 @@ const booklets = [
   {
     title: "Promotion of Farmer Producer Organisation",
     desc: "A guide to establishing and growing successful FPOs.",
-    file: "/booklets/exhibition.pdf"
+    file: "/booklets/booklet1.pdf"
   },
 
 ];
