@@ -25,3 +25,13 @@
   margin: 4px 0;
   font-size: 0.9rem;
 }
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  #kerala-map {
+    height: 50vh;
+    width: 80%;  
+    margin: 15px auto;
+    margin-bottom: 10vh;
+  }
+}
