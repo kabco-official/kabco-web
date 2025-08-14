@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Navbar from './components/navbar';
 import './css/home.css';
 import Socials from './components/socials'; 
+import KeralaMap from './components/keralaMap';
 
 const sliderImages = [
   '/home/newbg-1.jpg',
@@ -106,7 +107,7 @@ export default function Home() {
       </section>
 
 
-  
+    <KeralaMap/>
     </div>
   );
 }

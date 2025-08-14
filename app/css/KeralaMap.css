@@ -1,0 +1,26 @@
+#kerala-map {
+  height: 80vh;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+}
+
+.leaflet-container {
+  background: #eef2f0;
+}
+
+.popup-content {
+  font-family: Arial, sans-serif;
+}
+
+.popup-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2f4f2f; /* dark green text */
+}
+
+.popup-content p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
