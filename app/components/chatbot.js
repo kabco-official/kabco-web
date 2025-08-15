@@ -36,6 +36,7 @@ export default function Chatbot() {
     setLoading(true);
 
     try {
+      // Use absolute URL for Groq API
       const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: {
@@ -70,8 +71,8 @@ export default function Chatbot() {
 
       setMessages((prev) => [...prev, { sender: "bot", text: botReplyFormatted }]);
     } catch (error) {
-      console.error("Error:", error);
-      setMessages((prev) => [...prev, { sender: "bot", text: ["Error fetching response."] }]);
+      console.error("Error fetching Groq API response:", error);
+      setMessages((prev) => [...prev, { sender: "bot", text: ["⚠️ Error fetching response. Please try again."] }]);
     }
 
     setLoading(false);
@@ -107,7 +108,8 @@ export default function Chatbot() {
                 <div className="message-bubble">
                   {Array.isArray(msg.text)
                     ? msg.text.map((line, idx) => <p key={idx}>{line}</p>)
-                    : <p>{msg.text}</p>}
+                    : <p>{msg.text}</p>
+                  }
                 </div>
               </div>
             ))}
