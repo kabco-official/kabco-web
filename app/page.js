@@ -4,8 +4,10 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Navbar from './components/navbar';
 import './css/home.css';
+
 import Socials from './components/socials'; 
 import KeralaMap from './components/keralaMap';
+import FarmerChatbot from './components/chatbot';
 
 const sliderImages = [
   '/home/newbg-1.jpg',
@@ -37,6 +39,7 @@ export default function Home() {
       {/* Navbar */}
       <Navbar />
       <Socials />
+      <FarmerChatbot />
 
       {/* Slider with Arrows */}
       <div className="slider">
