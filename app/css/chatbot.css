@@ -176,7 +176,7 @@
     right: 16px;
   }
   .chatbot-popup {
-    bottom: 18vh; /* ensures it’s above the button */
+    bottom: 18vh; 
     width: 90vw;
     height: 70vh;
     right: 50%;

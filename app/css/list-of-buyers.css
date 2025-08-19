@@ -1,0 +1,68 @@
+.buyers-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e7d32; /* Main theme color */
+}
+
+.buyers-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e7d32; /* Green title */
+  margin-bottom: 15px;
+}
+
+.buyers-desc {
+  font-size: 1rem;
+  color: #3d3d3d; /* Neutral text */
+  margin-bottom: 30px;
+}
+
+.buyers-card {
+  background: #fdfdfd;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #d9e6da; /* subtle green border */
+  box-shadow: 0px 4px 10px rgba(46, 125, 50, 0.1);
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buyers-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 14px rgba(46, 125, 50, 0.2);
+}
+
+.buyers-card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.buyers-card-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #2e7d32;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #256428; /* darker green */
+  transform: scale(1.05);
+}

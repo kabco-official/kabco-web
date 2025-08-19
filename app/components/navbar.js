@@ -52,7 +52,8 @@ const Navbar = () => {
     'Central Govt. Schemes': '/central-gvmt',
     'State Govt. Schemes': '/state-gvmt',
     'KABCO-connect': '/kabco-connect',
-    'Booklets': '/booklets'
+    'Booklets': '/booklets',
+    'List of Buyers': '/list-of-buyers'
   };
 
   return (
