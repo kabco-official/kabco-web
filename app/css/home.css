@@ -315,11 +315,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 2vw;
+
   }
 
   .about-images {
-    grid-template-columns: 1fr;
     flex-direction: row;
   }
 
@@ -349,6 +348,7 @@ body {
   .about-section{
     justify-content: center;
     align-items: center;
+    margin-left: 10vw;
   }
   .about-images {
     flex-direction: column;
@@ -357,6 +357,10 @@ body {
   }
   .about-images img {
     width: 80vw;
+  }
+
+  .about-text{
+    text-align: center;
   }
 
   .about-text h2 {
