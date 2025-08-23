@@ -313,6 +313,9 @@ body {
   /* About section becomes single column */
   .about-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2vw;
   }
 
   .about-images {
@@ -343,11 +346,14 @@ body {
   .slider {
     height: 45vh;
   }
+  .about-section{
+    justify-content: center;
+    align-items: center;
+  }
   .about-images {
-    grid-template-columns: 1fr;
     flex-direction: column;
     margin: 0 auto;
-    margin-right: 2vw;
+
   }
   .about-images img {
     width: 80vw;
