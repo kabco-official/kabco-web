@@ -17,13 +17,13 @@ const menuItems = [
 ];
 
 const dropdowns = [
-  [],
+  [], // Home
   ['Central Govt. Schemes', 'State Govt. Schemes'],
   ['List of Buyers', 'KABCO-connect', 'Exhibitions', 'BP Providers', 'Model DPRs'],
   ['World Markets', 'Agri-Parks', 'FPOs in Kerala'],
   ['FPO Videos', 'Presentations', 'Booklets'],
-  [],
-  [],
+  ['Photo Gallery', 'Video Gallery', 'Kabco in Media'], // Gallery dropdown
+  [], // Contact Us
 ];
 
 const Navbar = () => {
@@ -43,8 +43,6 @@ const Navbar = () => {
   const goToPage = (page) => {
     if (page === 'Home') {
       router.push('/');
-    } else if (page === 'Gallery') {
-      router.push('/gallery');
     }
   };
 
@@ -53,7 +51,10 @@ const Navbar = () => {
     'State Govt. Schemes': '/state-gvmt',
     'KABCO-connect': '/kabco-connect',
     'Booklets': '/booklets',
-    'List of Buyers': '/list-of-buyers'
+    'List of Buyers': '/list-of-buyers',
+    'Photo Gallery': 'https://kabco.co.in/photo-gallery',
+    'Video Gallery': 'https://kabco.co.in/video-gallery',
+    'Kabco in Media': 'https://kabco.co.in/kabco-in-media',
   };
 
   return (
@@ -76,10 +77,10 @@ const Navbar = () => {
               onClick={() => {
                 if (item === 'Contact Us') {
                   gotocontact();
-                } else if (item === 'Home' || item === 'Gallery') {
+                } else if (item === 'Home') {
                   goToPage(item);
                 } else {
-                  handleClick(index);
+                  handleClick(index); // Gallery now works like Schemes
                 }
               }}
             >
@@ -95,7 +96,7 @@ const Navbar = () => {
                       const path = routeMap[option];
                       if (path) {
                         router.push(path);
-                        setOpenIndex(null); 
+                        setOpenIndex(null);
                       }
                     }}
                     className="dropdown-item"

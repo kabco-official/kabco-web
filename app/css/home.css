@@ -15,7 +15,7 @@ body {
 
 /* ========== NAVBAR STYLES ========== */
 .navbar {
-    position: sticky;
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,9 +104,10 @@ body {
 }
 
 /* ========== SLIDER STYLES ========== */
-.container{
+.container {
   min-width: 100vw;
 }
+
 .slider {
   position: relative;
   width: 95vw;
@@ -174,6 +175,7 @@ body {
   color: #0077cc;
 }
 
+/* ========== ABOUT SECTION ========== */
 .about-section {
   background: #ffffff;
   padding: 60px 8vw;
@@ -181,43 +183,66 @@ body {
 }
 
 .about-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 95vw;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: flex-start;
+  margin-left: 5vw;
+}
+
+.about-text {
+  flex: 0 0 60%;
   line-height: 1.8;
 }
 
-.about-container h2 {
+.about-text h2 {
   font-size: 36px;
   color: #2e7d32;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-.about-container h3 {
+.about-text h3 {
   font-size: 24px;
   margin-top: 30px;
   margin-bottom: 10px;
   color: #444;
 }
 
-.about-container p {
+.about-text p {
   font-size: 16px;
   margin-bottom: 15px;
 }
 
-.about-container ul {
+.about-text ul {
   padding-left: 20px;
   margin-bottom: 20px;
 }
 
-.about-container li {
+.about-text li {
   margin-bottom: 10px;
   font-size: 16px;
+}
+
+.about-images {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about-images img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: auto; /* let the image height adjust automatically */
 }
 
 
 /* ========== RESPONSIVE STYLES ========== */
 @media (max-width: 1100px) {
+  /* Navbar */
   .hamburger {
     display: block;
   }
@@ -259,9 +284,10 @@ body {
 
   .slider {
     width: 95vw;
-    height: 75vh;
+    height: 60vh;
   }
 
+  /* Social Icons for Mobile */
   .social-icons {
     position: fixed;
     top: auto;
@@ -279,11 +305,59 @@ body {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: flex;
-    }
-
+  }
 
   .social-icons a {
     font-size: 22px;
   }
+
+  /* About section becomes single column */
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-images {
+    grid-template-columns: 1fr;
+  }
+
+  .about-images img {
+    height: 200px;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .about-text h3 {
+    font-size: 20px;
+  }
+
+  .about-text p,
+  .about-text li {
+    font-size: 15px;
+  }
 }
 
+@media (max-width: 600px) {
+  .slider {
+    height: 45vh;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text h3 {
+    font-size: 18px;
+  }
+
+  .about-text p,
+  .about-text li {
+    font-size: 14px;
+  }
+
+  .about-images img {
+    height: 160px;
+  }
+}
