@@ -11,7 +11,7 @@ export default function ListOfBuyers() {
       <div className="buyers-container">
         <h1 className="buyers-title">List of Buyers</h1>
         <p className="buyers-desc">
-            Access the complete list of registered buyers. You can download the following file
+            Access the complete list of potential buyers. You can download the following file
             for offline reference.
         </p>
 
