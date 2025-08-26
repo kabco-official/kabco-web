@@ -59,7 +59,7 @@ export default function page() {
           <p className="dpr-subtext">
             Need help planning your project costs? Download ready-made DPR
             (Detailed Project Report) Excel templates. Just pick the one you
-            need, fill in your project details, and you're good to go! These
+            need, fill in your project details, and you are good to go! These
             templates make it easy to organize and update your project budget
             for the Final DPR.
           </p>
