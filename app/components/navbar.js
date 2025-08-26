@@ -36,7 +36,8 @@ const routeMap = {
   'Photo Gallery': 'https://kabco.co.in/photo-gallery',
   'Video Gallery': 'https://kabco.co.in/video-gallery',
   'Kabco in Media': 'https://kabco.co.in/kabco-in-media',
-  'World Markets': '/world-markets'
+  'World Markets': '/world-markets',
+  'Model DPRs': '/dprs'
 };
 
 const Navbar = () => {
