@@ -16,19 +16,35 @@ export default function Page() {
         { col1: "Rail Connectivity", col2: "Kochuveli -1.5 Km & Trivandrum Central 8 Km" },
         { col1: "Nearest Airport", col2: "Trivandrum International Airport – 9 Km" },
       ],
+      facilities: [
+        { col1: "Rental Shops", col2: "84 Nos (640 SQFT and 320 SQFT)" },
+        { col1: "Cold Storage", col2: "7 Nos (2 MT and 9 MT)" },
+        { col1: "Dormitory", col2: "1 Nos (10 Beds Available)" },
+        { col1: "Weigh Bridge", col2: "1 Nos (40 MT)" },
+        { col1: "Canteen, Conference Hall, Crop Bazar", col2: "Available" },
+        { col1: "Vegetable Auction", col2: "Available on Sunday, Tuesday and Thursday" },
+      ]
     },
     {
       heading: "Agriculture Urban Wholesale Market Maradu",
       rows: [
-        { col1: "Area", col2: "18.4 ha (46 acers)" },
-        { col1: "Survey No", col2: "509, 510, 532 to 551, 552, 553, 554, 560 to 575,844,884, 1695, 1726 and 1727" },
-        { col1: "Vacant land area", col2: "Mangroves, marshy land – 14.82 (Acre)Area for further dev. –5.43 (Acre)" },
+        { col1: "Area", col2: "18.4 ha (46 acres)" },
+        { col1: "Survey No", col2: "509, 510, 532 to 551, 552, 553, 554, 560 to 575, 844, 884, 1695, 1726 and 1727" },
+        { col1: "Vacant land area", col2: "Mangroves, marshy land – 14.82 (Acre), Area for further dev. – 5.43 (Acre)" },
         { col1: "Coordinates", col2: "9⁰92’70” N Latitude, 76⁰32’03”E Longitude" },
         { col1: "Road Connectivity", col2: "NH -66 (Kasargod-Trivandrum) -200 Mts" },
         { col1: "Port Connectivity", col2: "Cochin Port - 19 Kms" },
         { col1: "Rail Connectivity", col2: "Ernakulam Junction – 9 km" },
         { col1: "Nearest Airport", col2: "Cochin International Airport - 34 kms" },
       ],
+      facilities: [
+        { col1: "Rental Shops", col2: "144 Nos (172, 258, 344 and 6888 SQFT)" },
+        { col1: "Cold Storage", col2: "5 Nos (4 MT)" },
+        { col1: "Vacant Land", col2: "Available" },
+        { col1: "Weigh Bridge", col2: "1 Nos (50 MT)" },
+        { col1: "Canteen", col2: "Available" },
+        { col1: "Vegetable Auction", col2: "Available on Thursday" },
+      ]
     },
     {
       heading: "Agriculture Urban Wholesale Market Vengeri",
@@ -36,12 +52,20 @@ export default function Page() {
         { col1: "Area", col2: "23.16 Acres" },
         { col1: "Survey No", col2: "30 to 36" },
         { col1: "Vacant land area", col2: "9 Acre" },
-        { col1: "Coordinates", col2: "11°17'48.9444``N Latitude, 75°47'23.0460``ELongitude" },
+        { col1: "Coordinates", col2: "11°17'48.9444``N Latitude, 75°47'23.0460``E Longitude" },
         { col1: "Road Connectivity", col2: "NH 66 – 300 Meters" },
         { col1: "Port Connectivity", col2: "Calicut Port - 50 KM" },
         { col1: "Rail Connectivity", col2: "Kozhikode Railway station – 8 Km" },
         { col1: "Nearest Airport", col2: "Calicut International Airport is 30 KM" },
       ],
+      facilities: [
+        { col1: "Rental Shops", col2: "107 Nos (240, 320, 640 SQFT)" },
+        { col1: "Cold Storage", col2: "5 Nos (8 MT)" },
+        { col1: "Dormitory", col2: "10 Beds Available" },
+        { col1: "Weigh Bridge", col2: "1 Nos (60 MT)" },
+        { col1: "Canteen and Vacant Land", col2: "Available" },
+        { col1: "Vegetable Auction", col2: "Available on Monday, Wednesday and Friday" },
+      ]
     },
     {
       heading: "Agriculture Rural Wholesale Market Nedumangad",
@@ -54,6 +78,13 @@ export default function Page() {
         { col1: "Rail Connectivity", col2: "Trivandrum Central Railway Station – 18 Km" },
         { col1: "Nearest Airport", col2: "Trivandrum International Airport – 26 Km" },
       ],
+      facilities: [
+        { col1: "Rental Shops", col2: "49 Nos (640 SQFT and 320 SQFT)" },
+        { col1: "Cold Storage", col2: "6 Nos (2 MT)" },
+        { col1: "Weigh Bridge", col2: "1 Nos (40 MT)" },
+        { col1: "Canteen", col2: "Available" },
+        { col1: "Vegetable Auction", col2: "Available on Monday, Wednesday and Friday" },
+      ]
     },
     {
       heading: "Agriculture Rural Wholesale Market Muvattupuzha",
@@ -66,6 +97,14 @@ export default function Page() {
         { col1: "Rail Connectivity", col2: "Ernakulam railway station – 32 Km" },
         { col1: "Nearest Airport", col2: "Cochin international airport – 35 Km" },
       ],
+      facilities: [
+        { col1: "Rental Shops", col2: "66 Nos (172, 344, 688 SQFT)" },
+        { col1: "Cold Storage", col2: "4 Nos (5 MT)" },
+        { col1: "Dormitory", col2: "1 Nos (3 Beds Available)" },
+        { col1: "Weigh Bridge", col2: "1 Nos (50 MT)" },
+        { col1: "Canteen and Polyhouse", col2: "Available" },
+        { col1: "Vegetable Auction", col2: "Available on Tuesday" },
+      ]
     },
     {
       heading: "Agriculture Rural Wholesale Market Sulthan Bathery",
@@ -79,6 +118,14 @@ export default function Page() {
         { col1: "Rail Connectivity", col2: "Nilambur Railway Station – 27 Km" },
         { col1: "Nearest Airport", col2: "Calicut airport – 100 Km" },
       ],
+      facilities: [
+        { col1: "Rental Shops", col2: "18 Nos (299 SQFT and 630 SQFT)" },
+        { col1: "Cold Storage", col2: "4 Nos (1.5 MT)" },
+        { col1: "Dormitory", col2: "1 Nos (42 Beds Available)" },
+        { col1: "Weigh Bridge", col2: "1 Nos (50 MT)" },
+        { col1: "Canteen and Polyhouse", col2: "Available" },
+        { col1: "Seminar Hall", col2: "Available" },
+      ]
     },
   ];
 
@@ -90,6 +137,8 @@ export default function Page() {
       {markets.map((market, index) => (
         <div key={index} className="market-section">
           <h2 className="market-heading">{market.heading}</h2>
+
+          {/* Main Table */}
           <table className="market-table">
             <thead>
               <tr>
@@ -102,6 +151,25 @@ export default function Page() {
                 <tr key={rowIndex}>
                   <td>{row.col1}</td>
                   <td>{row.col2}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          {/* Available Facility Table */}
+          <h3 className="facility-heading">Available Facility</h3>
+          <table className="facility-table">
+            <thead>
+              <tr>
+                <th>Facility</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              {market.facilities.map((facility, fIndex) => (
+                <tr key={fIndex}>
+                  <td>{facility.col1}</td>
+                  <td>{facility.col2}</td>
                 </tr>
               ))}
             </tbody>
