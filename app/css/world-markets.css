@@ -40,6 +40,7 @@
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 25px;
+  font-size: 1rem;
 }
 
 .market-table th,
@@ -75,9 +76,68 @@
 
 /* Facility Heading */
 .facility-heading {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   margin: 15px 0 10px;
   color: #1f4d1a;
   text-align: center;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 1024px) {
+  .page-heading {
+    font-size: 2rem;
+  }
+  .market-heading {
+    font-size: 1.5rem;
+  }
+  .market-table,
+  .facility-table {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-heading {
+    font-size: 1.8rem;
+    margin: 20px 0;
+  }
+  .market-heading {
+    font-size: 1.4rem;
+    margin-bottom: 3vh;
+  }
+  .market-table,
+  .facility-table {
+    font-size: 0.9rem;
+    width: 95vw;
+  }
+  .market-table th,
+  .facility-table th,
+  .market-table td,
+  .facility-table td {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-heading {
+    font-size: 1.5rem;
+  }
+  .market-heading {
+    font-size: 1.2rem;
+  }
+  .facility-heading {
+    font-size: 1rem;
+  }
+  .market-table,
+  .facility-table {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .market-table th,
+  .facility-table th,
+  .market-table td,
+  .facility-table td {
+    padding: 6px 8px;
+  }
 }
