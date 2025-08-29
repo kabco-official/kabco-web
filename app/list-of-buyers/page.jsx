@@ -36,8 +36,8 @@ export default function ListOfBuyers() {
                 <Image
                   src="/buyers/kochisummit.jpg"
                   alt="Kochi Summit"
-                  width={300}
-                  height={300}
+                  width={500}
+                  height={500} // keep a consistent ratio
                 />
                 <p>Kochi Summit</p>
               </div>
@@ -45,8 +45,8 @@ export default function ListOfBuyers() {
                 <Image
                   src="/buyers/kozhikode-fpo-mela.jpeg"
                   alt="Kozhikode FPO Mela"
-                  width={300}
-                  height={400}
+                  width={500}
+                  height={500} // keep a consistent ratio
                 />
                 <p>Kozhikode FPO Mela</p>
               </div>
@@ -54,8 +54,8 @@ export default function ListOfBuyers() {
                 <Image
                   src="/buyers/thrissurassocham.jpg"
                   alt="Thrissur ASSOCHAM Event"
-                  width={300}
-                  height={300}
+                  width={500}
+                  height={500} // keep a consistent ratio
                 />
                 <p>Thrissur ASSOCHAM Event</p>
               </div>
