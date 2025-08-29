@@ -129,11 +129,13 @@ html {
 @media (max-width: 900px) {
   .buyers-main {
     flex-direction: column;
-    margin: 5vh 2vw;
+    margin: 5vh 5vw;
   }
 
   .buyers-meets-gallery {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     margin: 0 2vw;
   }
