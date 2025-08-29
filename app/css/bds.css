@@ -5,6 +5,7 @@ html{
 .bds-container {
   font-family: 'Arial', sans-serif;
   color: #333;
+  padding-bottom: 10vh;
 }
 
 .bds-content{
@@ -79,4 +80,11 @@ html{
 
 .bds-download-btn:hover {
   background-color: #1f4520;
+}
+
+@media (max-width: 900px){
+
+    .bds-block {
+        margin: 0 2vw;
+    }
 }
