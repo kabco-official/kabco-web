@@ -6,13 +6,13 @@ html {
   display: flex;
   justify-content: center; /* Centralize */
   align-items: flex-start;
-  padding: 8vh 5vw 20vh 5vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10vh 5vw;
 }
 
 
 .buyers-left {
-  flex: 0 0 70%;
+  flex: 0 0 80%;
   padding-left: 2vw;
   text-align: center; /* Centralize text */
 }
