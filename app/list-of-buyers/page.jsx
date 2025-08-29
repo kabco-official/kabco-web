@@ -3,6 +3,8 @@ import React from 'react';
 import '../css/list-of-buyers.css';
 import Navbar from '../components/navbar';
 import Socials from '../components/socials';
+import Image from 'next/image';
+
 
 export default function ListOfBuyers() {
   return (
@@ -31,15 +33,30 @@ export default function ListOfBuyers() {
             <h2 className="buyers-meets-title">Buyer-Seller Meets held by Kabco</h2>
             <div className="buyers-meets-gallery">
               <div className="buyers-meets-item">
-                <img src="/buyers/kochi-summit.jpg" alt="Meet 1" />
+                <Image
+                  src="/buyers/kochi-summit.jpg"
+                  alt="Kochi Summit"
+                  width={220}
+                  height={160}
+                />
                 <p>Kochi Summit</p>
               </div>
               <div className="buyers-meets-item">
-                <img src="/buyers/kozhikode-fpo-mela.jpeg" alt="Meet 2" />
+                <Image
+                  src="/buyers/kozhikode-fpo-mela.jpeg"
+                  alt="Kozhikode FPO Mela"
+                  width={220}
+                  height={160}
+                />
                 <p>Kozhikode FPO Mela</p>
               </div>
               <div className="buyers-meets-item">
-                <img src="/buyers/thrissur-assocham.jpg" alt="Meet 3" />
+                <Image
+                  src="/buyers/thrissur-assocham.jpg"
+                  alt="Thrissur ASSOCHAM Event"
+                  width={220}
+                  height={160}
+                />
                 <p>Thrissur ASSOCHAM Event</p>
               </div>
             </div>
