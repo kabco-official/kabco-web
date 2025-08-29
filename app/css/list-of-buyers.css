@@ -104,15 +104,9 @@ html {
 
 .buyers-meets-item {
   text-align: center;
+  flex: 1;
 }
 
-.buyers-meets-item img {
-  width: 50vw;
-  height: 20vw;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-}
 
 .buyers-meets-item p {
   margin-top: 10px;
@@ -149,8 +143,4 @@ html {
     flex-direction: column;
   }
 
-  .buyers-meets-item img {
-    width: 80vw;
-    height: 30vw;
-  }
 }
