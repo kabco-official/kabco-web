@@ -81,6 +81,7 @@ html {
    ========================= */
 .buyers-meets {
   margin-top: 50px;
+  width: 90vw;
 }
 
 .buyers-meets-title {
@@ -126,6 +127,7 @@ html {
     margin-bottom: 5vh;
   }
 
+
   .buyers-meets-title {
     margin-bottom: 5vh;
   }
@@ -144,7 +146,7 @@ html {
   }
 
   .buyers-meets-item img {
-    width: 50vw;
+    width: 80vw;
     height: 30vw;
   }
 }
