@@ -52,7 +52,7 @@ export default function ListOfBuyers() {
               </div>
               <div className="buyers-meets-item">
                 <Image
-                  src="/buyers/thrissur-assocham.jpg"
+                  src="/buyers/thrissurassocham.jpg"
                   alt="Thrissur ASSOCHAM Event"
                   width={300}
                   height={300}
