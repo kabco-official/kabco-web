@@ -16,8 +16,8 @@ html {
 
 
 .buyers-left {
-  flex: 0 0 80%;
-  padding-left: 2vw;
+  flex: 1;
+  margin: 0 5vw;
   text-align: center;
 }
 

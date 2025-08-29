@@ -1,9 +1,9 @@
 'use client';
+import Image from 'next/image';
 import React from 'react';
 import '../css/list-of-buyers.css';
 import Navbar from '../components/navbar';
 import Socials from '../components/socials';
-import Image from 'next/image';
 
 
 export default function ListOfBuyers() {
