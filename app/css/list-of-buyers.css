@@ -1,0 +1,157 @@
+html {
+  background: linear-gradient(to bottom right, #f0fdf4, #e9f5e9);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+.buyers-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10vh 5vw;
+}
+
+
+.buyers-left {
+  flex: 0 0 80%;
+  padding-left: 2vw;
+  text-align: center;
+}
+
+.buyers-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 6vh;
+}
+
+.buyers-desc {
+  font-size: 1rem;
+  color: #3d3d3d;
+  margin-bottom: 30px;
+}
+
+.buyers-card {
+  background: #fdfdfd;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #d9e6da;
+  box-shadow: 0px 4px 10px rgba(46, 125, 50, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buyers-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 14px rgba(46, 125, 50, 0.2);
+}
+
+.buyers-card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.buyers-card-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #2e7d32;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #256428;
+  transform: scale(1.05);
+}
+
+/* =========================
+   Buyer-Seller Meets Section
+   ========================= */
+.buyers-meets {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.buyers-meets-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 10vh;
+}
+
+.buyers-meets-gallery {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  justify-items: center;
+}
+
+.buyers-meets-item {
+  text-align: center;
+}
+
+.buyers-meets-item img {
+  width: 50vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.buyers-meets-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 900px) {
+  .buyers-main {
+    flex-direction: column;
+    padding: 5vh;
+    margin-bottom: 5vh;
+  }
+
+
+  .buyers-meets-title {
+    margin-bottom: 5vh;
+  }
+
+  .buyers-card {
+    margin: 0 auto;
+  }
+
+  .buyers-left {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .buyers-meets-gallery {
+    flex-direction: column;
+  }
+
+  .buyers-meets-item img {
+    width: 80vw;
+    height: 30vw;
+  }
+}
