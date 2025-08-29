@@ -5,6 +5,7 @@ html{
 .msme-container {
   font-family: Arial, sans-serif;
   text-align: center;
+  padding-bottom: 10vh;
 }
 
 .msme-content{
