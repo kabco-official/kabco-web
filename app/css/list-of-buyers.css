@@ -1,26 +1,26 @@
+html {
+  background: linear-gradient(to bottom right, #f0fdf4, #e9f5e9);
+}
+
 .buyers-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centralize */
   align-items: flex-start;
-  padding-top: 8vh;
-  padding-left: 8vh;
-  padding-right: 10vh;
-  gap: 2rem;
+  padding: 8vh 5vw 20vh 5vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: white;
-  padding-bottom: 20vh;
 }
 
 .buyers-left {
-  flex: 0 0 65%;
+  flex: 0 0 70%;
   padding-left: 2vw;
+  text-align: center; /* Centralize text */
 }
 
 .buyers-title {
   font-size: 2rem;
   font-weight: bold;
   color: #2e7d32;
-  margin-bottom: 10vh;
+  margin-bottom: 6vh;
 }
 
 .buyers-desc {
@@ -35,9 +35,10 @@
   border-radius: 12px;
   border: 1px solid #d9e6da;
   box-shadow: 0px 4px 10px rgba(46, 125, 50, 0.1);
-  text-align: left;
+  text-align: center;
   width: 100%;
   max-width: 420px;
+  margin: 0 auto;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -75,48 +76,75 @@
   transform: scale(1.05);
 }
 
-/* Right Images */
-.buyers-right {
-  flex: 0 0 30%;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1rem;
+/* =========================
+   Buyer-Seller Meets Section
+   ========================= */
+.buyers-meets {
+  margin-top: 50px;
 }
 
-.buyers-right img {
-  width: 100%;
-  height: 200px;
+.buyers-meets-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 10vh;
+}
+
+.buyers-meets-gallery {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  justify-items: center;
+}
+
+.buyers-meets-item {
+  text-align: center;
+}
+
+.buyers-meets-item img {
+  width: 50vw;
+  height: 20vw;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
 
+.buyers-meets-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
 
+/* =========================
+   Responsive
+   ========================= */
 @media (max-width: 900px) {
   .buyers-main {
     flex-direction: column;
     padding: 5vh;
     margin-bottom: 5vh;
-
   }
 
-  .buyers-card{
+  .buyers-meets-title {
+    margin-bottom: 5vh;
+  }
+
+  .buyers-card {
     margin: 0 auto;
   }
 
-  .buyers-left, .buyers-right {
+  .buyers-left {
     flex: 1 1 100%;
     text-align: center;
   }
 
-  .buyers-right {
-    grid-template-columns: 1fr 1fr 1fr;
-    display: flex;
+  .buyers-meets-gallery {
     flex-direction: column;
-    margin: 0 auto;
   }
 
-  .buyers-right img {
-    height: 150px;
+  .buyers-meets-item img {
+    width: 50vw;
+    height: 30vw;
   }
 }
