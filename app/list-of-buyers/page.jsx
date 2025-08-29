@@ -34,7 +34,7 @@ export default function ListOfBuyers() {
             <div className="buyers-meets-gallery">
               <div className="buyers-meets-item">
                 <Image
-                  src="/buyers/kochi-summit.jpg"
+                  src="/buyers/kochisummit.jpg"
                   alt="Kochi Summit"
                   width={300}
                   height={300}
