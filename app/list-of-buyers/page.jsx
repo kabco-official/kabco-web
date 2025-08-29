@@ -5,7 +5,6 @@ import '../css/list-of-buyers.css';
 import Navbar from '../components/navbar';
 import Socials from '../components/socials';
 
-
 export default function ListOfBuyers() {
   return (
     <div>
@@ -28,37 +27,28 @@ export default function ListOfBuyers() {
             </a>
           </div>
 
-          {/* New Section */}
+          {/* Buyer-Seller Meets */}
           <div className="buyers-meets">
             <h2 className="buyers-meets-title">Buyer-Seller Meets held by Kabco</h2>
             <div className="buyers-meets-gallery">
-              <div className="buyers-meets-item">
-                <Image
-                  src="/buyers/kochisummit.jpg"
-                  alt="Kochi Summit"
-                  width={500}
-                  height={500} // keep a consistent ratio
-                />
-                <p>Kochi Summit</p>
-              </div>
-              <div className="buyers-meets-item">
-                <Image
-                  src="/buyers/kozhikode-fpo-mela.jpeg"
-                  alt="Kozhikode FPO Mela"
-                  width={500}
-                  height={500} // keep a consistent ratio
-                />
-                <p>Kozhikode FPO Mela</p>
-              </div>
-              <div className="buyers-meets-item">
-                <Image
-                  src="/buyers/thrissurassocham.jpg"
-                  alt="Thrissur ASSOCHAM Event"
-                  width={500}
-                  height={500} // keep a consistent ratio
-                />
-                <p>Thrissur ASSOCHAM Event</p>
-              </div>
+              {[
+                { src: "/buyers/kochisummit.jpg", alt: "Kochi Summit", label: "Kochi Summit" },
+                { src: "/buyers/kozhikode-fpo-mela.jpeg", alt: "Kozhikode FPO Mela", label: "Kozhikode FPO Mela" },
+                { src: "/buyers/thrissurassocham.jpg", alt: "Thrissur ASSOCHAM Event", label: "Thrissur ASSOCHAM Event" },
+                { src: "/buyers/cherthala.jpg", alt: "B2B Meet, Cherthala", label: "B2B Meet, Cherthala" }
+              ].map((item, index) => (
+                <div className="buyers-meets-item" key={index}>
+                  <div className="image-wrapper">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      fill
+                      style={{ objectFit: "cover", borderRadius: "12px" }}
+                    />
+                  </div>
+                  <p>{item.label}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
