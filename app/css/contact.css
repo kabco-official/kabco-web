@@ -21,6 +21,7 @@ body {
   background: linear-gradient(to bottom right, #ffffff, #f9fff9);
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(46, 125, 50, 0.1);
+  margin-bottom: 10vh;
 }
 
 /* Header */

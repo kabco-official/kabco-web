@@ -11,11 +11,33 @@ export default function CentralSchemesPage() {
       <Socials />
       <div className='central-gvmt-submain'>
         <header className="central-gvmt-header">
-          <h1 className="central-gvmt-title">Central Government Schemes</h1>
+          <h1 className="central-gvmt-title">National Schemes</h1>
           <p className="central-gvmt-subtext">
-            Below are the central government schemes that support agri-business through funding, infrastructure, and ecosystem development.
+            Below are the national schemes that support agri-business through funding, infrastructure, and ecosystem development.
           </p>
         </header>
+
+        {/* Krishi Nivesh Scheme */}
+        <section className="central-gvmt-scheme-card">
+          <h2 className="central-gvmt-scheme-title">Krishi Nivesh Yojana</h2>
+          <p className="central-gvmt-scheme-desc">
+            Your Gateway to Agri-Investment – Apply seamlessly to a wide range of schemes in Agriculture and Allied Sectors.
+          </p>
+          <div className="central-gvmt-links">
+            <a href="https://krishinivesh.gov.in/#/" target="_blank" rel="noopener noreferrer">🌐 Check and Apply Online</a>
+          </div>
+        </section>
+
+        {/* Jansamarth Scheme */}
+        <section className="central-gvmt-scheme-card">
+          <h2 className="central-gvmt-scheme-title">Jansamarth Portal</h2>
+          <p className="central-gvmt-scheme-desc">
+            National Portal for Credit-Linked Government Schemes: A Unified Digital Platform Integrating Government Credit-Linked Initiatives
+          </p>
+          <div className="central-gvmt-links">
+            <a href="https://www.jansamarth.in" target="_blank" rel="noopener noreferrer">🌐 Check and Apply Online </a>
+          </div>
+        </section>
 
         {/* Scheme 1 */}
         <section className="central-gvmt-scheme-card">

@@ -1,5 +1,7 @@
+body{
+  background: linear-gradient(to bottom right, #f0fdf4, #e9f5e9);
+}
 .world-markets {
-  background: #f8f9fc;
   font-family: Arial, sans-serif;
 }
 

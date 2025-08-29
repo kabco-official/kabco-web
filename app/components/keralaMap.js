@@ -13,32 +13,34 @@ const KeralaMap = () => {
           zoomControl: false,
         }).setView([10.85, 76.27], 7);
 
+        // Add zoom control
         L.control.zoom({ position: "bottomright" }).addTo(map);
 
+        // Add tile layer
         L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
           attribution:
             '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
 
-        // District data (Population as per 2011 Census, Area in km²)
+        // District FPO data
         const districtData = {
-          "Thiruvananthapuram": { population: 3301427, area: 2192 },
-          "Kollam": { population: 2629703, area: 2491 },
-          "Pathanamthitta": { population: 1195537, area: 2652 },
-          "Alappuzha": { population: 2127789, area: 1415 },
-          "Kottayam": { population: 1974551, area: 2203 },
-          "Idukki": { population: 1108974, area: 4356 },
-          "Ernakulam": { population: 3279860, area: 3068 },
-          "Thrissur": { population: 3110327, area: 3032 },
-          "Palakkad": { population: 2810892, area: 4480 },
-          "Malappuram": { population: 4112920, area: 3550 },
-          "Kozhikode": { population: 3086293, area: 2345 },
-          "Wayanad": { population: 817420, area: 2132 },
-          "Kannur": { population: 2525637, area: 2966 },
-          "Kasaragod": { population: 1302600, area: 1992 },
+          "Thiruvananthapuram": { "FPO Count": 60 },
+          "Kollam": { "FPO Count": 38 },
+          "Pathanamthitta": { "FPO Count": 31 },
+          "Alappuzha": { "FPO Count": 34 },
+          "Kottayam": { "FPO Count": 44 },
+          "Idukki": { "FPO Count": 74 },
+          "Ernakulam": { "FPO Count": 59 },
+          "Thrissur": { "FPO Count": 70 },
+          "Palakkad": { "FPO Count": 61 },
+          "Malappuram": { "FPO Count": 43 },
+          "Kozhikode": { "FPO Count": 51 },
+          "Wayanad": { "FPO Count": 46 },
+          "Kannur": { "FPO Count": 29 },
+          "Kasaragod": { "FPO Count": 24 },
         };
 
-        // Load Kerala districts
+        // Load GeoJSON
         fetch("/kerala_districts.geojson")
           .then((res) => res.json())
           .then((data) => {
@@ -56,10 +58,10 @@ const KeralaMap = () => {
                   "Unknown";
 
                 const extraData = districtData[districtName] || {
-                  population: "N/A",
-                  area: "N/A",
+                  "FPO Count": "N/A",
                 };
 
+                // Mouse events
                 layer.on({
                   mouseover: (e) => {
                     const layer = e.target;
@@ -83,12 +85,11 @@ const KeralaMap = () => {
                     layer
                       .bindPopup(
                         `
-                        <div class="popup-content">
-                          <h3>${districtName}</h3>
-                          <p><b>Population:</b> ${extraData.population.toLocaleString()}</p>
-                          <p><b>Area:</b> ${extraData.area} km²</p>
-                        </div>
-                      `,
+                          <div class="popup-content">
+                            <h3>${districtName}</h3>
+                            <p><b>FPO Count:</b> ${extraData["FPO Count"]}</p>
+                          </div>
+                        `,
                         { className: "district-popup" }
                       )
                       .openPopup();
@@ -102,7 +103,7 @@ const KeralaMap = () => {
     }
   }, []);
 
-  return <div id="kerala-map"></div>;
+  return <div id="kerala-map" style={{ height: "600px", width: "100%" }}></div>;
 };
 
 export default KeralaMap;

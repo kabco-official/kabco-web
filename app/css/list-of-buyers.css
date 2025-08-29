@@ -1,22 +1,30 @@
-.buyers-container {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  text-align: center;
+.buyers-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 8vh;
+  padding-left: 8vh;
+  padding-right: 10vh;
+  gap: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #2e7d32; /* Main theme color */
+  background-color: white;
+}
+
+.buyers-left {
+  flex: 0 0 65%;
+  padding-left: 2vw;
 }
 
 .buyers-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #2e7d32; /* Green title */
-  margin-bottom: 15px;
+  color: #2e7d32;
+  margin-bottom: 10vh;
 }
 
 .buyers-desc {
   font-size: 1rem;
-  color: #3d3d3d; /* Neutral text */
+  color: #3d3d3d;
   margin-bottom: 30px;
 }
 
@@ -24,9 +32,8 @@
   background: #fdfdfd;
   padding: 25px;
   border-radius: 12px;
-  border: 1px solid #d9e6da; /* subtle green border */
+  border: 1px solid #d9e6da;
   box-shadow: 0px 4px 10px rgba(46, 125, 50, 0.1);
-  display: inline-block;
   text-align: left;
   width: 100%;
   max-width: 420px;
@@ -63,6 +70,52 @@
 }
 
 .download-btn:hover {
-  background: #256428; /* darker green */
+  background: #256428;
   transform: scale(1.05);
+}
+
+/* Right Images */
+.buyers-right {
+  flex: 0 0 30%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.buyers-right img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 900px) {
+  .buyers-main {
+    flex-direction: column;
+    padding: 5vh;
+    margin-bottom: 5vh;
+
+  }
+
+  .buyers-card{
+    margin: 0 auto;
+  }
+
+  .buyers-left, .buyers-right {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .buyers-right {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .buyers-right img {
+    height: 150px;
+  }
 }

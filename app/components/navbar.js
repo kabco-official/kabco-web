@@ -19,25 +19,29 @@ const menuItems = [
 
 const dropdowns = [
   [],
-  ['Central Govt. Schemes', 'State Govt. Schemes'],
-  ['List of Buyers', 'KABCO-connect', 'Exhibitions', 'BP Providers', 'Model DPRs'],
-  ['World Markets', 'Agri-Parks', 'FPOs in Kerala'],
-  ['FPO Videos', 'Presentations', 'Booklets'],
+  ['National Schemes', 'State Govt. Schemes', 'KERA'],
+  ['List of Buyers', 'KABCO-connect', 'Exhibitions', 'BDS Providers', 'Model DPRs'],
+  ['World Markets', 'FPOs in Kerala', 'MSMEs in Kerala'],
+  ['FPO Videos', 'Presentations', 'Booklets and Publications'],
   ['Photo Gallery', 'Video Gallery', 'Kabco in Media'],
   [],
 ];
 
 const routeMap = {
-  'Central Govt. Schemes': '/central-gvmt',
+  'National Schemes': '/central-gvmt',
   'State Govt. Schemes': '/state-gvmt',
   'KABCO-connect': '/kabco-connect',
-  'Booklets': '/booklets',
+  'Booklets and Publications': '/booklets',
   'List of Buyers': '/list-of-buyers',
   'Photo Gallery': 'https://kabco.co.in/photo-gallery',
   'Video Gallery': 'https://kabco.co.in/video-gallery',
   'Kabco in Media': 'https://kabco.co.in/kabco-in-media',
   'World Markets': '/world-markets',
-  'Model DPRs': '/dprs'
+  'Model DPRs': '/dprs',
+  'FPOs in Kerala': '/fpokerala',
+  'MSMEs in Kerala': '/msmekerala',
+  'KERA': '/kera',
+  'BDS Providers': '/bds'
 };
 
 const Navbar = () => {
