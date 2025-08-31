@@ -20,7 +20,7 @@ const menuItems = [
 const dropdowns = [
   [],
   ['National Schemes', 'State Govt. Schemes', 'KERA'],
-  ['List of Buyers', 'KABCO-connect', 'Exhibitions', 'BDS Providers', 'Model DPRs'],
+  ['List of Buyers', 'KABCO-connect', 'BDS Providers', 'Model DPRs'],
   ['World Markets', 'FPOs in Kerala', 'MSMEs in Kerala'],
   ['FPO Videos', 'Presentations', 'Booklets and Publications'],
   ['Photo Gallery', 'Video Gallery', 'Kabco in Media'],
@@ -41,7 +41,8 @@ const routeMap = {
   'FPOs in Kerala': '/fpokerala',
   'MSMEs in Kerala': '/msmekerala',
   'KERA': '/kera',
-  'BDS Providers': '/bds'
+  'BDS Providers': '/bds',
+  'FPO Videos': '/fpo-videos'
 };
 
 const Navbar = () => {

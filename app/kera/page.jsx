@@ -26,10 +26,10 @@ export default function Page() {
         <Navbar />
         <Socials />
       <div className='kera-content'>
-      <h1 className="kera-heading">Kera World Bank Project</h1>
+      <h1 className="kera-heading">KERA World Bank Project</h1>
 
       <p className="kera-description">
-        The <b>Kera World Bank Project</b> is an initiative designed to promote 
+        The <b>Kerala Climate Resilient Agri-Value Chain Modernization (KERA) World Bank Project</b> is an initiative designed to promote 
         sustainable agriculture, empower farmers, and build a resilient rural economy. 
         By providing access to modern practices, financial support, and training, 
         the project ensures inclusive growth and long-term development for communities.

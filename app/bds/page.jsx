@@ -15,7 +15,7 @@ const bdsBlocks = [
     file: "/bds/loksabha16.pdf"
   },
   {
-    title: "CEFPPc Report",
+    title: "CEFPPC Report",
     desc: "Comprehensive report on the Central Food Processing Promotion Council's initiatives and projects.",
     file: "/bds/cefppc.pdf"
   },
