@@ -28,6 +28,16 @@ const bdsBlocks = [
     title: "PAD List",
     desc: "Official list of PAD (Public Assistance Distribution) items with relevant details and classifications.",
     file: "/bds/pad.pdf"
+  },
+  {
+    title: "Food Processing and Packaging Machinery",
+    desc: "This document provides information about the Food Processing Equipment sector, covering machines used for preparing, preserving, and packaging food products to ensure efficiency, safety, and quality.",
+    file: "/bds/food-processing.pdf"
+  },
+  {
+    title: "MOFPI Assisted Completed Food Processing Projects",
+    desc: "With support from the Ministry of Food Processing Industries, the completed food processing projects focus on strengthening infrastructure, enhancing value addition, and improving efficiency across the sector.",
+    file: "/bds/completed_project_list.pdf"
   }
 ];
 

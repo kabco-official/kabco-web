@@ -41,10 +41,20 @@ const booklets = [
     file: "/booklets/National_policy_onFPOs.pdf"
   },
   {
+    title: "Ministry of Agriculture and Farmers Welfare, annual report 2024-2025",
+    desc: "Agriculture and Farmers Welfare outlines key initiatives and progress in India’s agriculture sector.",
+    file: "/booklets/annual-report.pdf"
+  },
+  {
+    title: "Agriculture and Food Management",
+    desc: "A key sector for the future, Agriculture and Food Management emphasizes sustainable practices, modern technologies, and efficient supply chains to drive growth and resilience in farming and food systems.",
+    file: "/booklets/food-management.pdf"
+  },
+  {
     title: "Agro Chem Federation of India-Crop Advisory Database",
     desc: "A comprehensive database by the Agro Chem Federation of India providing crop advisory, guidance, and best practices to support farmers and improve agricultural productivity.",
     link: "https://www.acfiindia.com/member-companies"
-  },
+  }
 ];
 
 export default function BookletsPage() {
