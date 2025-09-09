@@ -22,7 +22,7 @@ const dropdowns = [
   ['National Schemes', 'State Govt. Schemes', 'KERA'],
   ['List of Buyers', 'KABCO-connect', 'BDS Providers', 'Model DPRs'],
   ['World Markets', 'FPOs in Kerala', 'MSMEs in Kerala'],
-  ['FPO Videos', 'Presentations', 'Booklets and Publications'],
+  ['FPO Videos', 'Booklets and Publications'],
   ['Photo Gallery', 'Video Gallery', 'Kabco in Media'],
   [],
 ];
