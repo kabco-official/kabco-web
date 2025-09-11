@@ -14,7 +14,7 @@ export default function KabcoConnectPage() {
       <div className="kabco-connect-main">
         {/* Left Content */}
         <div className="kabco-connect-content">
-          <h1>🌾 KABCO Connect 🌱</h1>
+          <h1>KABCO Connect</h1>
           <h2>Empowering FPOs & Agri MSMEs</h2>
 
           <p className="kabco-connect-subtext">🤝 Collaborate. Learn. Grow.</p>
